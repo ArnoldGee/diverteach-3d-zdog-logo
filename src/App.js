@@ -36,21 +36,22 @@ function App() {
       fill: true,
     });
 
-    var shadow = text.copy({
+    text.copy({
       addTo: illo,
       translate: {y: -20, z: -6},
       color: '#F4A261',
     });
 
     // add circle
-    var circle = new Zdog.Ellipse({
+    new Zdog.Ellipse({
       addTo: illo,
       diameter: 150,
       stroke: 25,
       quarters: 3,
       color: '#33C1B1',
     });
-    var point = new Zdog.Shape({
+    
+    new Zdog.Shape({
       addTo: illo,
       // no path set, default to single point
       translate: { y: -45, x: -45},
